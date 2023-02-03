@@ -1,9 +1,11 @@
 export default class Character {
-  constructor(type, attribute, hitPoints, attack){
+  constructor(type, attribute, hitPoints, attack, level, xp){
     this.type = type;
     this.attribute = attribute;
     this.hitPoints = hitPoints;
     this.attack = attack;
+    this.level = level;
+    this.xp = xp;
   }
 
   addType(type) {
@@ -21,5 +23,6 @@ export default class Character {
   updateAtk(attack) {
     this.attack = attack;
   }
+
 }
 
